@@ -7,7 +7,7 @@
 
 /*
 {
-  var a = 5;           ----> functional scope
+  var a = 5;           //----> functional scope
 }
 console.log(a);
 */
@@ -15,7 +15,7 @@ console.log(a);
 /*
 {
   let a = 5;
-  console.log(a);      -----> block scope
+  console.log(a);      //-----> block scope
 }
 console.log(a);  --> not defined
 */
@@ -23,15 +23,16 @@ console.log(a);  --> not defined
 /*
 {
   const a = 5;
-  console.log(a);      -------> block scope
+  console.log(a);      //-------> block scope
 }
 console.log(a);  --> not defined
 */
 
 //-----------------------variable shadowing-----------------------------------------
 // while shadowing a variable, we should not cross the boundary of the scope i.e., var can be shadowed by let but opposite can't be done.
-//  If we try to shadow let by var, then it is called illegal shadowing ans it will show the error that variable is already declared
+//  If we try to shadow let by var, then it is called illegal shadowing and it will show the error that variable is already declared
 
+/*
 function test() {
   var a = "Hello";
   // let b = "Bye";
@@ -40,16 +41,17 @@ function test() {
     let a = "Hi";
     // var b = "Goodbye";
     console.log(a);
-    // console.log(b);  --> will show error that b is already declared
+    // console.log(b);  // --> will show error that b is already declared
   }
 
   console.log(a);
 }
 
 test();
+*/
 
 //---------------------------------Declaration-------------------------------------------------------------
-// var can be re-declared in the same scope but let and const can'y be re-declared in the same scope
+// var can be re-declared in the same scope but let and const can't be re-declared in the same scope
 
 //------------------Declaration without initilization------------------------
 // var, let --> can be declared without initializing
