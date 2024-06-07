@@ -122,8 +122,7 @@ const message = importantAction("Roadside Coder", function (message) {
 
 console.log("stop");
 
-
-The above function has so many callbacks one inside the another (inside message). That's why it is called callback hell
+// The above function has so many callbacks one inside the another (inside message). That's why it is called callback hell.
 */
 
 /*
@@ -132,7 +131,7 @@ The above function has so many callbacks one inside the another (inside message)
         Stop
         Subscribe to roadside coder
         Like the javascript interview questions video
-        Like the javascript interview questions video
+        Share the Javascript interview questions video
 
 */
 
@@ -327,7 +326,7 @@ console.log("stop");
 */
 
 // Promise.race()
-// It returns the first promise that gets fullfilled or rejected
+// It returns the first promise that gets fullfilled or rejected.
 
 /*
 Promise.race([importantAction("Roadside Coder"), likeTheVideo("Javascript interview questions"), shareTheVideo("Javascript interview questions")])
@@ -361,7 +360,7 @@ console.log("stop");
 */
 
 // Promise.any()
-// It returns the first fullfilled and ignores all the reject ones. If all of the promises gets rejected then it fails the whole promise
+// It returns the first fullfilled and ignores all the reject ones. If all of the promises gets rejected then it fails the whole promise.
 
 /*
 Promise.any([importantAction("Roadside Coder"), likeTheVideo("Javascript interview questions"), shareTheVideo("Javascript interview questions")])
@@ -672,3 +671,5 @@ promise
       Error caught
       Success: test
 */
+
+//------------------------------------Promise Polyfill Implementation
