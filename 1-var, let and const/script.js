@@ -7,23 +7,23 @@
 
 /*
 {
-  var a = 5;           //----> functional scope
+  var a = 5;   //----> functional scope
 }
-console.log(a);
+console.log(a);   // a = 5
 */
 
 /*
 {
-  let a = 5;
-  console.log(a);      //-----> block scope
+  let a = 5;          //-----> block scope
+  console.log(a);      
 }
 console.log(a);  --> not defined
 */
 
 /*
 {
-  const a = 5;
-  console.log(a);      //-------> block scope
+  const a = 5;      //-------> block scope
+  console.log(a);      
 }
 console.log(a);  --> not defined
 */
@@ -84,7 +84,7 @@ console.log(count);
 var count = 1;
 
 console.log(count) will show 'undefined'. It will not show any error like 'variable undeclared or unintialized'.
-During the creation phase, js moves all the variables abd functions to the top of the code and this is known as 'Hoisting'.
+During the creation phase, js moves all the variables and functions to the top of the code and this is known as 'Hoisting'.
 So js looks the above code like this :-
     var count;
     console.log(count);
@@ -96,7 +96,7 @@ So js looks the above code like this :-
 console.log(count);
 let count = 1;
 
-will show 'can't access count before initilization.
+will show 'can't access count before initilization'.
 Here, 'count' is in Temporal Dead Zone.
 Temporal Dead Zone is the time between declaration and initialization of let and const variables. 
 Here, count is hoisted but it is hoisted in temporal dead zone
