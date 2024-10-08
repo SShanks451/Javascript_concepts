@@ -180,7 +180,7 @@ const add = (firstNum, secondNum) => {
 };
 */
 
-// -----------------------------------------------------------Arrow functions  vs Regular Function
+// -----------------------------------------------------------Arrow functions  vs Regular Function-----------------------
 
 // 1 - Syntax
 
@@ -209,7 +209,7 @@ fn(1, 3, 2);
 
 /*
 const fnArr = () => {
-  console.log(argumnets);
+  console.log(arguments);
 };
 fnArr(1, 3, 2);
 */
